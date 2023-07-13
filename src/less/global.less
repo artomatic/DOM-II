@@ -1,5 +1,17 @@
 * {
   box-sizing: border-box;
+
+
+}
+
+.mirror {
+  transform: rotateY(180deg);
+  transition: transform 0.3s ease-in-out
+}
+
+.blur-body {
+  filter: blur(3px);
+  transition: filter 0.3s ease-in-out
 }
 
 html {
@@ -37,6 +49,8 @@ p {
 img {
   max-width: 100%;
   height: auto;
+  transform: rotateY(0deg);
+  transition: transform 0.3s ease-in-out
 }
 
 .container {
@@ -49,3 +63,5 @@ img {
     margin: 0 5%;
   }
 }
+
+
